@@ -11,6 +11,7 @@ function App() {
 	const [tag, setTag] = useState("");
 	const [news, setNews] = useState<any[]>([{}]);
 	const [user, setUser] = useState("");
+	// eslint-disable-next-line
 	const [password, setPassword] = useState("");
 	const changeThemeMode = () => {
 		setDarkMode(!darkMode);
