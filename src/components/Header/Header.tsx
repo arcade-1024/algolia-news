@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./header.css";
 import { FiSearch, FiSettings } from "react-icons/fi";
 import Logo from "../../assets/logo.png";
