@@ -28,13 +28,13 @@ const Login = ({ user, setUser, password, setPass }: LoginInterface) => {
 					<input
 						type="text"
 						placeholder="UserName"
-						className="my-3 px-2 py-2 shadow-xl dark:bg-grey-600"
+						className="my-3 px-2 py-2 shadow-xl dark:bg-grey-600 dark:text-gray-50"
 						ref={userNameRef}
 					/>
 					<input
 						type="password"
 						placeholder="Password"
-						className="my-3 px-2 py-2 shadow-xl dark:bg-grey-600"
+						className="my-3 px-2 py-2 shadow-xl dark:bg-grey-600 dark:text-gray-50"
 						ref={passwordRef}
 					/>
 					<button className="mt-10 bg-blue-500 dark:bg-blue-900 text-white px-4 py-2 rounded-lg shadow-md">
