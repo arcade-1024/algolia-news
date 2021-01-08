@@ -2,10 +2,12 @@ import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import Logo from "../assets/logo.png";
 export interface LoginInterface {
+	user: string;
 	setUser: Function;
 	setPass: Function;
+	password: string;
 }
-const Login = ({ setUser, setPass }: LoginInterface) => {
+const Login = ({ user, setUser, password, setPass }: LoginInterface) => {
 	const history = useHistory();
 	const userNameRef = useRef<HTMLInputElement>(null);
 	const passwordRef = useRef<HTMLInputElement>(null);
@@ -13,6 +15,8 @@ const Login = ({ setUser, setPass }: LoginInterface) => {
 		e.preventDefault();
 		setUser(userNameRef.current?.value);
 		setPass(passwordRef.current?.value);
+		localStorage.setItem("user", user);
+		localStorage.setItem("password", password);
 		history.push(`/`);
 	};
 	return (

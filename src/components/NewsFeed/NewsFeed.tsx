@@ -24,7 +24,6 @@ const NewsFeed = ({
 	const menuHandler = () => {
 		setShowMenu(!showMenu);
 	};
-	console.log(Feeds[0]);
 	
 	let currDate = new Date();
 	const differenceYear = (year: Date) => {
@@ -106,7 +105,6 @@ const NewsFeed = ({
 									</div>
 									<a
 										href={`${feed.url}`}
-										target={"_blank"}
 										className="flex items-center ml-2 md:ml-4"
 									>
 										<FiLink size={12} />

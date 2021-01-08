@@ -72,7 +72,7 @@ function App() {
 					<Route
 						exact
 						path="/login"
-						component={() => <Login setPass={setPassword} setUser={setUser} />}
+						component={() => <Login password={password} setPass={setPassword} user={user} setUser={setUser} />}
 					/>
 				</Switch>
 			</div>
